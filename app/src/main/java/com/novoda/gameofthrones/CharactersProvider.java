@@ -3,7 +3,7 @@ package com.novoda.gameofthrones;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CharactersProvider {
+class CharactersProvider {
     static List<Character> getCharacters() {
         List<Character> characters = new ArrayList<>();
 
