@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView storiesView = findViewById(R.id.stories_view);
 
-        final List<Character> characters = CharactersProvider.getCharacters();
+        List<Character> characters = CharactersProvider.getCharacters();
 
         RecyclerView.Adapter<GenericViewHolder> viewHolderAdapter = new GenericViewHolderAdapter(this, characters);
 
