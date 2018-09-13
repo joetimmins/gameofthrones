@@ -1,19 +1,19 @@
 package com.novoda.gameofthrones;
 
-public class Character {
+class Character {
     private final String name;
     private final String wikipediaUrl;
 
-    public Character(String name, String wikipediaUrl) {
+    Character(String name, String wikipediaUrl) {
         this.name = name;
         this.wikipediaUrl = wikipediaUrl;
     }
 
-    public String getWikipediaUrl() {
+    String getWikipediaUrl() {
         return wikipediaUrl;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 }
