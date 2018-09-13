@@ -11,11 +11,11 @@ import android.widget.TextView;
 
 import java.util.List;
 
-class GenericViewHolderAdapter extends RecyclerView.Adapter<GenericViewHolder> {
+class CharactersAdapter extends RecyclerView.Adapter<GenericViewHolder> {
     private Context context;
     private final List<Character> characters;
 
-    GenericViewHolderAdapter(Context context, List<Character> characters) {
+    CharactersAdapter(Context context, List<Character> characters) {
         this.context = context;
         this.characters = characters;
     }

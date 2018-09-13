@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<Character> characters = CharactersProvider.getCharacters();
 
-        RecyclerView.Adapter<GenericViewHolder> viewHolderAdapter = new GenericViewHolderAdapter(this, characters);
+        RecyclerView.Adapter<GenericViewHolder> viewHolderAdapter = new CharactersAdapter(this, characters);
 
         storiesView.setAdapter(viewHolderAdapter);
 
