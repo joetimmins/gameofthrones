@@ -3,6 +3,7 @@ package com.novoda.gameofthrones;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,20 +15,21 @@ class GenericViewHolderAdapter extends RecyclerView.Adapter<GenericViewHolder> {
     private Context context;
     private final List<Character> characters;
 
-    public GenericViewHolderAdapter(Context context, List<Character> characters) {
+    GenericViewHolderAdapter(Context context, List<Character> characters) {
         this.context = context;
         this.characters = characters;
     }
 
+    @NonNull
     @Override
-    public GenericViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public GenericViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         CharacterView characterView = new CharacterView(context);
 
         return new GenericViewHolder(characterView);
     }
 
     @Override
-    public void onBindViewHolder(GenericViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull GenericViewHolder holder, int position) {
         CharacterView itemView = (CharacterView) holder.itemView;
         TextView tvCharacterName = itemView.getCharacterNameView();
         final Character character = characters.get(position);
