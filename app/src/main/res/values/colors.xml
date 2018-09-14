@@ -3,4 +3,15 @@
   <color name="colorPrimary">#3F51B5</color>
   <color name="colorPrimaryDark">#303F9F</color>
   <color name="colorAccent">#FF4081</color>
+
+  <color name="orange50">#FBE9E7</color>
+  <color name="orange100">#FFCCBC</color>
+  <color name="orange200">#FFAB91</color>
+  <color name="orange300">#FF8A65</color>
+  <color name="orange400">#FF7043</color>
+  <color name="orange500">#FF5722</color>
+  <color name="orange600">#F4511E</color>
+  <color name="orange700">#E64A19</color>
+  <color name="orange800">#D84315</color>
+  <color name="orange900">#BF360C</color>
 </resources>

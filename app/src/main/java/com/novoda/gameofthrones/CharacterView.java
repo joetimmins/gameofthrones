@@ -8,6 +8,7 @@ import android.widget.TextView;
 class CharacterView extends LinearLayout {
 
     private TextView characterNameView;
+    private TextView viewHolderNumberView;
 
     public CharacterView(Context context) {
         super(context);
@@ -15,9 +16,14 @@ class CharacterView extends LinearLayout {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         layoutInflater.inflate(R.layout.character_view_layout, this, true);
         characterNameView = findViewById(R.id.character_name_view);
+        viewHolderNumberView = findViewById(R.id.view_holder_number);
     }
 
-    public TextView getCharacterNameView() {
+    TextView getCharacterNameView() {
         return characterNameView;
+    }
+
+    TextView getViewHolderNumberView() {
+        return viewHolderNumberView;
     }
 }

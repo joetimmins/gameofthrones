@@ -12,4 +12,12 @@
     android:text=""
     android:textSize="24sp" />
 
+  <TextView
+    android:id="@+id/view_holder_number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:text=""
+    android:textSize="24sp" />
+
 </LinearLayout>
